@@ -1,0 +1,9 @@
+services:
+  finance-quote:
+    image: grmontesino/finance-quote-dev:latest
+    user: ${UID:-1000}
+    environment:
+      - TEST_AUTHOR=${TEST_AUTHOR:-1}
+      - ONLINE_TEST=${ONLINE_TEST:-1}
+    volumes:
+      - "${SRC_DIR:-./src}:/usr/src/finance-quote"
