@@ -18,6 +18,7 @@ RUN cpanm install Dist::Zilla::Plugin::EmailNotify \
   HTML::TreeBuilder \
   HTML::TreeBuilder::XPath \
   HTTP::CookieJar::LWP \
+  IO::String \
   JSON \
   Spreadsheet::XLSX \
   String::Util \
